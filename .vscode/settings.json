@@ -15,7 +15,6 @@
     "pnpm": true
   },
   "github.copilot.chat.commitMessageGeneration.instructions": [
-    { "text": "Keep summaries under 72 characters" },
     { "file": ".github/commit-instructions.md" }
   ]
 }

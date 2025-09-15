@@ -1,15 +1,59 @@
 # GitHub Copilot Commit Message Guide
 
-Please follow these rules when suggesting commit messages:
+### Structure
 
-- Always use **Conventional Commit style**: `<type>(<scope>): <short summary>`
-- Keep summaries under 72 characters
-- Use imperative mood (e.g., "add feature" not "added feature")
-- Reference relevant files if possible
-- Do not include issue numbers automatically
-- Types: feat, fix, docs, style, refactor, perf, test, chore
+Follow the Conventional Commits specification: 
 
-Examples:
-- feat(auth): add login endpoint
-- fix(ui): correct button alignment
-- docs(readme): update installation section
+```
+‹type> [optional scope]: ‹description>
+
+[optional body]
+
+[optional footer (s)]
+```
+
+There can only be one commit message line per commit.
+Add additional info in the body and footer as needed.
+
+### Types
+
+- **feat**: A new feature 
+- **fix**: A bug fix 
+- **docs**: Documentation only changes 
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, 
+- **refactor**: A code change that neither fixes a bug nor adds a feature • 
+- **perf**: A code change that improves performance
+- **test**: Adding missing tests or correcting existing tests 
+- **build**: Changes that affect the build system or external dependencies 
+- **ci**: Changes to CI configuration files and scripts 
+- **chore**: Other changes that don't modify sre or test files 
+- **revert**: Reverts a previous commit
+
+### Examples
+
+```
+feat(auth): add OAuth2 authentication 
+fix(api): resolve null pointer exception in user service docs: update installation instructions refactor(utils): simplify date formatting function test(auth): add unit tests for login validation
+```
+
+## Commit Message Guidelines
+
+### Subject Line (First Line)
+
+- **Length**: Keep under 50 characters 
+- **Capitalization**: Use lowercase for type and description 
+- **Tense**: Use imperative mood ("add" not "added" or "adds") 
+- **Punctuation**: No period at the end 
+- **Clarity**: Be specific and descriptive I
+
+### Body (Optional)
+
+- **Length**: Wrap at 72 characters 
+- **Content**: Explain what and why, not how 
+- **Separation**: Leave a blank line between subject and body
+
+### Footer (Optional)
+
+- **Breaking Changes**: Start with "BREAKING CHANGE:" 
+- **Issue References**: "Closes #123" or "Fixes #456" 
+- **Co-authors**: "Co-authored-by: Name <email@example.com>"
