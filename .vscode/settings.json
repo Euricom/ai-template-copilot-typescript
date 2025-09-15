@@ -1,0 +1,21 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "rm": false,
+    "rmdir": false,
+    "del": false,
+    "kill": false,
+    "curl": false,
+    "wget": false,
+    "eval": false,
+    "chmod": false,
+    "chown": false,
+    "/^Remove-Item\\b/i": false,
+    "/\\.ps1/": false, // deny PowerShell scripts
+    "git": true,
+    "pnpm": true
+  },
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    { "text": "Keep summaries under 72 characters" },
+    { "file": ".github/commit-instructions.md" }
+  ]
+}

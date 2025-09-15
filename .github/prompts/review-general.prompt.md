@@ -2,8 +2,6 @@
 
 Perform a comprehensive review of the entire TypeScript codebase focusing on architecture, patterns, and best practices.
 
-Review scope: $ARGUMENTS
-
 If no specific scope provided, review the entire codebase.
 
 ## Review Process
@@ -80,7 +78,7 @@ If no specific scope provided, review the entire codebase.
    - README completeness
    - Component prop documentation
    - API documentation
-   - copilot-instructions.md updates
+   - CLAUDE.md updates
 
 ### 10. **Standards Compliance**
    - ESLint configuration and compliance
@@ -104,7 +102,6 @@ npx tsc --noEmit --listFiles
 pnpm run build && du -sh dist/
 
 # Code quality metrics
-rg --stats "client:" --type astro
 rg --stats "export interface" --type ts
 rg --stats "import type" --type ts
 

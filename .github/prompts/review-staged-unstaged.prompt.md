@@ -5,8 +5,6 @@ Ensure you look at both new files and modified files.
 
 Check the diff of each file to see what has changed.
 
-Previous review report: $ARGUMENTS
-
 May or may not be added, ignore the previous review if not specified.
 
 ## Review Focus Areas

@@ -1,9 +1,4 @@
-# Base instructions for Github Copilot
-
-Please address me as Master.
-
-
-## GitHub Copilot Commit Message Guide
+# GitHub Copilot Commit Message Guide
 
 Please follow these rules when suggesting commit messages:
 
@@ -18,4 +13,3 @@ Examples:
 - feat(auth): add login endpoint
 - fix(ui): correct button alignment
 - docs(readme): update installation section
-
